@@ -13,10 +13,6 @@ const app = express();
 const isProduction = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || 8000;
 
-// ARQUIVOS ESTATICOS
-app.use("/public", express.static(__dirname + "/public"));
-app.use("/public/images", express.static(__dirname + "/public/images"));
-
 // SETUP MONGODB
 const dbs = require("./config/database");
 const dbURI = isProduction ? dbs.dbProd : dbs.dbTest;
@@ -54,6 +50,7 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500);
     if (err.status !== 404) console.warn("Error: ", err.message, new Date());
     res.json(err);
+    res.json(next);
 });
 
 // ESCUTANDO
