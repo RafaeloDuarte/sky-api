@@ -97,6 +97,9 @@ O arquivo de configuração do banco de dados deve ser em formato json e se loca
     "dbProd":"url-de-conexão"
 }
 ```
+
+### .env
+
 As variáveis de produção no arquivo .env deverão ser:
 
 * PORT - Referenciar a porta onde a aplicação ficará hospedada dentro do servidor
