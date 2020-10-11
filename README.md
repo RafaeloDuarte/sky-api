@@ -99,5 +99,5 @@ O arquivo de configuração do banco de dados deve ser em formato json e se loca
 ```
 As variáveis de produção no arquivo .env deverão ser:
 
-PORT - Referenciar a porta onde a aplicação ficará hospedada dentro do servidor
-SECRET - Definir o token de criptografia de senha, este deverá conter uma string separada por dois pontos ".", ex.: WDAD.ASFSA.FSDFGFG
+* PORT - Referenciar a porta onde a aplicação ficará hospedada dentro do servidor
+* SECRET - Definir o token de criptografia de senha, este deverá conter uma string separada por dois pontos ".", ex.: WDAD.ASFSA.FSDFGFG
