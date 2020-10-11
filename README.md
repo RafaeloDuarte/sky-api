@@ -85,3 +85,19 @@ A resposta será com os dados alterados e um novo token.
 
 Somente o próprio usuário poderá deletar seu cadastro, sendo assim deverá estar registrado para que seja possível deletar.
 O verbo para tal é DELETE e o caminho da requisição é host/v1/api/usuarios
+
+## Configuração
+
+O arquivo de configuração do banco de dados deve ser em formato json e se localizar na pasta config no arquivo database.json, seguindo este formato:
+
+### config/database.json
+```json
+{
+    "dbTest":"url-de-conexão-teste",
+    "dbProd":"url-de-conexão"
+}
+```
+As variáveis de produção no arquivo .env deverão ser:
+
+PORT - Referenciar a porta onde a aplicação ficará hospedada dentro do servidor
+SECRET - Definir o token de criptografia de senha, este deverá conter uma string separada por dois pontos ".", ex.: WDAD.ASFSA.FSDFGFG
