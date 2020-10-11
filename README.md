@@ -29,9 +29,9 @@ Deve ter as chaves e valores nessa formação:
 
 ``` json
 {
-    email: email@email.com,
-    password: senha,
-    nome: Nome
+    "email": "email@email.com",
+    "password": "senha",
+    "nome": "Nome"
 }
 ```
 
@@ -56,8 +56,8 @@ Deve ter as chaves e valores nessa formação:
 
 ``` json
 {
-    email: email@email.com,
-    password: senha
+    "email": "email@email.com",
+    "password": "senha"
 }
 ```
 
