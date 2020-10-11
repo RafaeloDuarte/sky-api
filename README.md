@@ -1,4 +1,4 @@
-# sky-api
+# Sky-API
 
 ## Introdução
 
