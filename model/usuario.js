@@ -58,8 +58,6 @@ UsuarioSchema.methods.enviarAuthJSON = function(){
         _id: this._id,
         nome: this.nome,
         email: this.email,
-        loja: this.loja,
-        role: this.permissao,
         token: this.gerarToken()
     };
 };
